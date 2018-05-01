@@ -45,8 +45,10 @@
        (str     "#388a43")
        (type    "#9b2e29")
        (var     "#4b4b4b")
-       (warning "#ae3c37")
-       (warning2 "#ae3c37"))
+       (warning "#b67299")
+       (warning2 "#ea92c4")
+       (high-light-warn "#ea92c4")
+       (cursor-color "#444444"))
    (custom-theme-set-faces
    'nnero
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
@@ -66,8 +68,8 @@
         `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
 	`(hl-line ((,class (:background  ,bg2))))
 	`(fringe ((,class (:background ,bg2 :foreground ,fg4))))
-	`(cursor ((,class (:background ,bg3))))
-        `(show-paren-match-face ((,class (:background ,warning))))
+	`(cursor ((,class (:background ,cursor-color))))
+        `(show-paren-match-face ((,class (:background ,high-light-warn))))
         `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))
         `(mode-line ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
         `(mode-line-inactive ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,var :background ,bg1 :weight normal))))

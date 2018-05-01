@@ -1,7 +1,7 @@
 ;; this is the common config for all model
 
 ;;the ui config
-(load-theme 'soft-stone t)
+(load-theme 'nnero t)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (global-linum-mode t)
