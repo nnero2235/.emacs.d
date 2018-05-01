@@ -1,0 +1,16 @@
+;;the c/c++ mode configs
+(setq c-basic-offset 4)
+(require 'ycmd)
+(require 'company-ycmd)
+(require 'flycheck-ycmd)
+(set-variable 'ycmd-server-command '("python" "/home/nnero/tools/ycmd/ycmd"))
+(set-variable 'ycmd-global-config "/home/nnero/tools/ycmd/cpp/ycm/.ycm_extra_conf.py")
+(company-ycmd-setup)
+(flycheck-ycmd-setup)
+(add-hook 'c-mode-hook 'ycmd-mode)
+(add-hook 'c-mode-hook 'imenu-add-menubar-index)
+(add-hook 'c-mode-hook 'flycheck-mode)
+(add-hook 'c-mode-hook (lambda()
+                         (local-set-key (kbd "\C-d") 'kill-whole-line)))
+
+(provide 'init-c-mode)
