@@ -12,5 +12,13 @@
 (add-hook 'c-mode-hook 'flycheck-mode)
 (add-hook 'c-mode-hook (lambda()
                          (local-set-key (kbd "\C-d") 'kill-whole-line)))
+(add-hook 'c++-mode-hook 'ycmd-mode)
+(add-hook 'c++-mode-hook 'imenu-add-menubar-index)
+(add-hook 'c++-mode-hook 'flycheck-mode)
+(add-hook 'c++-mode-hook (lambda()
+                         (local-set-key (kbd "\C-d") 'kill-whole-line)))
 
+(global-set-key (kbd "<f5>") (lambda()
+                               (interactive)
+                               (dired "/home/nnero/project/cplusplus/learnxinymins")))
 (provide 'init-c-mode)

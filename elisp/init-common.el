@@ -1,6 +1,7 @@
 ;; this is the common config for all model
 
 ;;the ui config
+(setq default-directory "~/")
 (load-theme 'nnero t)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -22,13 +23,19 @@
 (setq tab-width 4)
 (require 'recentf)
 (recentf-mode 1)
-(setq default-directory "~/")
+
 
 ;;global mode and settings
 (delete-selection-mode 1)
 (require 'popwin)
 (popwin-mode t)
 (global-company-mode t)
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "M-n") nil)
+  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous)
+  )
 
 ;; my habits kdbs
 (global-set-key (kbd "\C-d") 'kill-whole-line)
