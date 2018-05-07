@@ -31,6 +31,10 @@
                          company-ycmd
                          ;; ---- magit inner git management----
                          magit
+                         ;; ---- python dev env -----
+                         elpy
+                         ;; --- python auto pep8 ---
+                         py-autopep8
 			 ) "NNERO packages")
 
 (setq package-selected-packages nnero/packages)

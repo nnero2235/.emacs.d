@@ -29,4 +29,5 @@
 (require 'init-common)
 (require 'init-c-mode)
 (require 'init-elisp)
+(require 'init-python)
 
