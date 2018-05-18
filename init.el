@@ -30,4 +30,5 @@
 (require 'init-c-mode)
 (require 'init-elisp)
 (require 'init-python)
+(require 'init-web)
 
