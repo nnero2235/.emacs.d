@@ -2,7 +2,10 @@
 
 ;;the ui config
 (setq default-directory "~/")
-(load-theme 'nnero t)
+(if (display-graphic-p) 
+    (load-theme 'nnero t) 
+  (load-theme 'soft-stone t))
+;;(load-theme 'nnero t)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (global-linum-mode t)
@@ -12,6 +15,7 @@
 (global-hl-line-mode 1)
 (set-default-font "Hack-16")
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
+(setq ring-bell-function 'ignore)
 
 ;;the defaults
 ;; file configs
@@ -46,6 +50,7 @@
 (global-set-key (kbd "M-m") 'scroll-up-command)
 (global-set-key (kbd "M-n") 'scroll-down-command)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
+(global-set-key (kbd "C-\/") 'comment-or-uncomment-region)
 
 (defun copy-line()
   (interactive)
