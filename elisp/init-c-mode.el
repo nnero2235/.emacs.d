@@ -20,5 +20,5 @@
 
 (global-set-key (kbd "<f5>") (lambda()
                                (interactive)
-                               (dired "/home/nnero/project/cplusplus/learnxinymins")))
+                               (dired "/home/nnero/project/cplusplus/cplusplusprimer")))
 (provide 'init-c-mode)
