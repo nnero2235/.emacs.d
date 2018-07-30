@@ -3,9 +3,9 @@
 ;;the ui config
 (setq default-directory "~/")
 (if (display-graphic-p) 
-    (load-theme 'nnero t) 
+    (load-theme 'github t) 
   (load-theme 'soft-stone t))
-;;(load-theme 'nnero t)
+;;(load-theme 'soft-stone t)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (global-linum-mode t)

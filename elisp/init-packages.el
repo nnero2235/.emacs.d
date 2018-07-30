@@ -15,6 +15,7 @@
 			 company
 			 ;; ---- theme ----
 			 soft-stone-theme
+                         github-theme
 			 ;; ---- ehenced M-x ----
 			 swiper
 			 ;; ----- swiper needs this ----
@@ -37,6 +38,13 @@
                          py-autopep8
                          ;; ---- web mode for html,js editor ---
                          web-mode
+                         ;; ---- c/c++ ide config rtags ----
+                         irony
+                         rtags
+                         company-rtags
+                         flycheck-rtags
+                         company-irony-c-headers
+                         company-irony
 			 ) "NNERO packages")
 
 (setq package-selected-packages nnero/packages)
