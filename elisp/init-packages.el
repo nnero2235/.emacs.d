@@ -45,6 +45,8 @@
                          flycheck-rtags
                          company-irony-c-headers
                          company-irony
+                         ;; -----  lua mode -----
+                         lua-mode
 			 ) "NNERO packages")
 
 (setq package-selected-packages nnero/packages)

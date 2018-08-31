@@ -13,9 +13,13 @@
 (setq-default cursor-type 'bar)
 (setq inhibit-splash-screen 1)
 (global-hl-line-mode 1)
-(set-default-font "Hack-16")
+(set-default-font "Ubuntu mono-16")
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 (setq ring-bell-function 'ignore)
+
+;;input method conflicts
+(global-unset-key (kbd "C-SPC"))
+;;(global-set-key (kbd "M-SPC")
 
 ;;the defaults
 ;; file configs
@@ -74,6 +78,9 @@
                                (interactive)
                                (dired "~/project/")))
 
+(global-set-key (kbd "<f7>") (lambda ()
+                               (interactive)
+                               (dired "~/tools/kubernetes/third_party")))
 
 ;;swiper and counsel in ivy mode
 (ivy-mode 1)
