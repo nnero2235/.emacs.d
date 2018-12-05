@@ -10,7 +10,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (lua-mode company-ycmd ycmd smooth-scrolling soft-stone-theme github-theme anti-zenburn-theme company))))
+    (rust-mode lua-mode company-ycmd ycmd smooth-scrolling soft-stone-theme github-theme anti-zenburn-theme company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -32,4 +32,5 @@
 (require 'init-python)
 (require 'init-web)
 (require 'init-lua)
+(require 'init-rust-mode)
 

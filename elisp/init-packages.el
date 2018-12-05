@@ -47,6 +47,8 @@
                          company-irony
                          ;; -----  lua mode -----
                          lua-mode
+                         ;; -----  rust mode ----
+                         rust-mode
 			 ) "NNERO packages")
 
 (setq package-selected-packages nnero/packages)
